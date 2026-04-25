@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smoke Test - uload-labtest</title>
+  <style>
+    body { font-family: sans-serif; background: #111; color: #0f0; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    .box { text-align: center; padding: 40px; border: 2px solid #0f0; border-radius: 12px; }
+    h1 { font-size: 3rem; margin: 0; }
+    p { color: #888; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>✅ Render Cloud Active</h1>
+    <p>uload-labtest | GitHub + Render connected</p>
+    <p>Deployed at: <span id="t"></span></p>
+  </div>
+  <script>document.getElementById('t').textContent = new Date().toISOString();</script>
+</body>
+</html>
